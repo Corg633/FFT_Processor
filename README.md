@@ -1,5 +1,11 @@
-# FFT_Processor
+# FFT Processor
 Demo Code for FFT Processor with IP library modules (Quartus Pro)
+
+**Institutions**:  
+- The City College of New York  
+- Graduate Center of the City University of New York
+
+---
 
 # Specifications of Designed Platform
 

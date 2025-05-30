@@ -14,13 +14,12 @@ Demo Code for FFT Processor with IP library modules (Quartus Pro)
 
 # Prerequisites
 
-## Hardware:
-- Intel MAX-10 10M50DAF484C7G FPGA Device
-  50K Programmable Logic Elements
-  1,638 Kbits M9K Memory
-  5,888 Kbit User Flash Memory
-  144 18×18 Multiplier
-  4 PLLs
+## Hardware: Intel MAX-10 10M50DAF484C7G FPGA Device
+- 50K Programmable Logic Elements
+- 1,638 Kbits M9K Memory
+- 5,888 Kbit User Flash Memory
+- 144 18×18 Multiplier
+- 4 PLLs
 
 ## Software: 
 - Quartus Prime Lite 18.1

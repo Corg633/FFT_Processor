@@ -20,7 +20,7 @@ wire [11:0] fsin_o;
 reg  [11:0] adc_sample_sync1, adc_sample_sync2;
 
 wire signed [12:0] in_signal_signed;
-wire signed [11:0] in_signal_to_fft; // ✅ Final 12-bit signed input to FFT
+wire signed [11:0] in_signal_to_fft; // Final 12-bit signed input to FFT
 wire [11:0] in_signal;
 
 wire [19:0] real_power_sig, imag_power_sig;
@@ -88,7 +88,7 @@ end
 
 assign in_signal = adc_sample_sync2;
 
-// ✅ Offset correction and truncation to 12-bit signed for FFT
+// Offset correction and truncation to 12-bit signed for FFT
 assign in_signal_signed = $signed({1'b0, in_signal}) - $signed(ADC_OFFSET);
 assign in_signal_to_fft = in_signal_signed[11:0]; // Truncate or clip as needed
 
@@ -105,7 +105,7 @@ assign signal_tap_sink_valid    = sink_valid_sig;
 // FFT Wrapper instance
 fft_wrapper fft_wrapper_inst (
     .clk(clk),
-    .in_signal(in_signal_to_fft), // ✅ Use properly formatted input
+    .in_signal(in_signal_to_fft), // Use properly formatted input
     .real_power(real_power_sig),
     .imag_power(imag_power_sig),
     .fft_source_sop(fft_source_sop_sig),
